@@ -216,6 +216,7 @@ export default (options = {}) => {
 
                     fs.writeFile(destPath, cssExtract, err => {
                         if (err) { rejectExtract(err) }
+			console.log('Writing css to ' + destPath);
                         resolveExtract()
                     })
                 })
